@@ -1,0 +1,68 @@
+@import "styles/variables";
+
+.ProductDetail {
+  position: relative;
+
+  &__img {
+    max-height: 300px;
+    display: block;
+    margin: 10px auto 0;
+  }
+
+  &__count {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: $purple;
+    color: white;
+    position: absolute;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    left: 7px;
+    top: 7px;
+  }
+
+  &__description {
+    border-bottom: 1px solid #a411bc38;
+    padding: 20px 0;
+    &-text {
+      display: -webkit-box;
+      -webkit-line-clamp: 5;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      margin: 0;
+    }
+  }
+
+  &__option {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #a411bc38;
+    p {
+      margin: 0;
+    }
+  }
+
+  &__dot {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #a411bc38;
+    margin: 0 10px;
+    display: block;
+  }
+
+  &__btn {
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+  }
+
+  &__space {
+    flex-grow: 1;
+    color: $purple;
+  }
+}

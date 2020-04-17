@@ -1,0 +1,19 @@
+@import "styles/variables.scss";
+
+.Products {
+  margin-top: 20px;
+  column-count: 3;
+  column-gap: 20px;
+
+  &__item {
+    break-inside: avoid;
+    border: 1px solid $black;
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .Products {
+    column-count: 2;
+  }
+}

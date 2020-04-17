@@ -1,0 +1,41 @@
+@import "styles/variables.scss";
+
+.CheckOut {
+  &__list {
+    display: grid;
+    grid-template-columns: max-content auto;
+    padding: 20px 0;
+    border-bottom: 1px solid $black;
+    column-gap: 10px;
+    align-items: center;
+
+    &-count {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: $purple;
+      color: white;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+    }
+
+    img {
+      height: 100px;
+    }
+  }
+
+  &__total {
+    text-align: right;
+    margin-top: 20px;
+    font-weight: bold;
+
+    .text {
+      color: $black;
+    }
+
+    .value {
+      color: $purple;
+    }
+  }
+}
